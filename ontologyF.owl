@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#"
-     xml:base="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5"
+<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project-f#"
+     xml:base="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project-f"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,8 +11,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:ontological-engineering-project="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project"/>
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project-f">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project-f"/>
+        <ns:license>Creative Commons Attribution 4.0 International (CC BY 4.0)</ns:license>
+        <dc:creator>Ana Mª Casado Faulí &amp; Alberto Miño Calero</dc:creator>
+        <rdfs:comment xml:lang="en">Ontology of representation of visits to public facilities of natural spaces in Andalusia</rdfs:comment>
+        <rdfs:comment xml:lang="es">Ontología de representación de las visitas a equipamientos públicos de espacios naturales en Andalucía</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -22,6 +30,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -60,10 +80,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#deVisita -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#deVisita -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#deVisita">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#enIntervaloDeTiempo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#deVisita">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#enIntervaloDeTiempo"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:label xml:lang="es">deVisita</rdfs:label>
@@ -72,9 +92,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#enIntervaloDeTiempo -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#enIntervaloDeTiempo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#enIntervaloDeTiempo">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#enIntervaloDeTiempo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
         <rdfs:label xml:lang="es">enIntervaloDeTiempo</rdfs:label>
@@ -83,10 +103,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEquipamientoDe -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEquipamientoDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEquipamientoDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEquipamiento"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEquipamientoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEquipamiento"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
         <rdfs:label xml:lang="es">esEquipamientoDe</rdfs:label>
@@ -95,10 +115,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEspacioNaturalDe -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEspacioNaturalDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEspacioNaturalDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEspacioNatural"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEspacioNaturalDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEspacioNatural"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
         <rdfs:label xml:lang="es">esEspacioNaturalDe</rdfs:label>
@@ -107,19 +127,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esParteDe -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esParteDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esParteDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esParteDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte"/>
         <rdfs:label xml:lang="es">esParteDe</rdfs:label>
         <rdfs:label xml:lang="en">isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEquipamiento -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEquipamiento -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEquipamiento">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEquipamiento">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
         <rdfs:label xml:lang="en">hasEquipment</rdfs:label>
@@ -128,9 +148,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEspacioNatural -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEspacioNatural -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEspacioNatural">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEspacioNatural">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
         <rdfs:label xml:lang="en">hasNaturalSpace</rdfs:label>
@@ -139,18 +159,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte">
         <rdfs:label xml:lang="en">hasPart</rdfs:label>
         <rdfs:label xml:lang="es">tieneParte</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneProcedencia -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneProcedencia -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneProcedencia">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneProcedencia">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Lugar_Procedencia"/>
         <rdfs:label xml:lang="en">hasOrigin</rdfs:label>
@@ -159,10 +179,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneVisita -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneVisita -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneVisita">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#visitaAlEquipamiento"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneVisita">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#visitaAlEquipamiento"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:label xml:lang="en">hasVisit</rdfs:label>
@@ -171,9 +191,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#visitaAlEquipamiento -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#visitaAlEquipamiento -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#visitaAlEquipamiento">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#visitaAlEquipamiento">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
         <rdfs:label xml:lang="es">visitaAlEquipamiento</rdfs:label>
@@ -207,9 +227,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#numero_de_visitantes -->
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#numero_de_visitantes -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#numero_de_visitantes">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#numero_de_visitantes">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:label xml:lang="en">Number of visitors</rdfs:label>
@@ -335,13 +355,13 @@ The range of this property is not specified, so can be replaced by any specific 
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Lugar_Procedencia"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esParteDe"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esParteDe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Pais"/>
             </owl:Restriction>
@@ -410,7 +430,7 @@ The range of this property is not specified, so can be replaced by any specific 
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Lugar_Procedencia"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Pais"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -437,13 +457,13 @@ The range of this property is not specified, so can be replaced by any specific 
     <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneVisita"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneVisita"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEquipamientoDe"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEquipamientoDe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
             </owl:Restriction>
@@ -461,13 +481,13 @@ The range of this property is not specified, so can be replaced by any specific 
     <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEquipamiento"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEquipamiento"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esEspacioNaturalDe"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esEspacioNaturalDe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
             </owl:Restriction>
@@ -557,13 +577,13 @@ The range of this property is not specified, so can be replaced by any specific 
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Lugar_Procedencia"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneParte"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneParte"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#CCAA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esParteDe"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esParteDe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Continente"/>
             </owl:Restriction>
@@ -591,13 +611,13 @@ The range of this property is not specified, so can be replaced by any specific 
     <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneEspacioNatural"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneEspacioNatural"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#esParteDe"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#esParteDe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#CCAA"/>
             </owl:Restriction>
@@ -666,21 +686,21 @@ The range of this property is not specified, so can be replaced by any specific 
         <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Observation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#enIntervaloDeTiempo"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#enIntervaloDeTiempo"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#visitaAlEquipamiento"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#visitaAlEquipamiento"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Equipamiento"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#tieneProcedencia"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#tieneProcedencia"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Lugar_Procedencia"/>
             </owl:Restriction>
@@ -729,7 +749,7 @@ The range of this property is not specified, so can be replaced by any specific 
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#deVisita"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#deVisita"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -768,72 +788,72 @@ The range of this property is not specified, so can be replaced by any specific 
     
 
 
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Almería -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Almería">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
-        <ontological-engineering-project:esParteDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Andalucía"/>
-        <ontological-engineering-project:tieneEspacioNatural rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Parque_Natural_Sierra_Nevada"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Andalucía -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Andalucía">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#CCAA"/>
-        <ontological-engineering-project:tieneParte rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Almería"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Laujar_de_Andarax -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Laujar_de_Andarax">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Centro_de_visitantes"/>
-        <ontological-engineering-project:esEquipamientoDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Parque_Natural_Sierra_Nevada"/>
-        <ontological-engineering-project:tieneVisita rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Visita1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Parque_Natural_Sierra_Nevada -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Parque_Natural_Sierra_Nevada">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
-        <ontological-engineering-project:esEspacioNaturalDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Almería"/>
-        <ontological-engineering-project:tieneEquipamiento rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Laujar_de_Andarax"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Visita1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Visita1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
-        <ontological-engineering-project:enIntervaloDeTiempo rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#2018"/>
-        <ontological-engineering-project:tieneProcedencia rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Andalucía"/>
-        <ontological-engineering-project:visitaAlEquipamiento rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Laujar_de_Andarax"/>
-        <ontological-engineering-project:numero_de_visitantes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1919</ontological-engineering-project:numero_de_visitantes>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#dataset1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#dataset1">
-        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
-        <cube:dataSet rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#dataset1"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#2018 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#2018">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
-        <ontological-engineering-project:deVisita rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#Visita1"/>
+        <untitled-ontology-5:deVisita rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita1"/>
         <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Almería -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Almería">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Provincia"/>
+        <untitled-ontology-5:esParteDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Andalucía"/>
+        <untitled-ontology-5:tieneEspacioNatural rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Parque_Natural_Sierra_Nevada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Andalucía -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Andalucía">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#CCAA"/>
+        <untitled-ontology-5:tieneParte rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Almería"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Laujar_de_Andarax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Laujar_de_Andarax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Centro_de_visitantes"/>
+        <untitled-ontology-5:esEquipamientoDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Parque_Natural_Sierra_Nevada"/>
+        <untitled-ontology-5:tieneVisita rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Parque_Natural_Sierra_Nevada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Parque_Natural_Sierra_Nevada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Espacio_Natural"/>
+        <untitled-ontology-5:esEspacioNaturalDe rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Almería"/>
+        <untitled-ontology-5:tieneEquipamiento rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Laujar_de_Andarax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Visita"/>
+        <untitled-ontology-5:enIntervaloDeTiempo rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/ontological-engineering-project#2018"/>
+        <untitled-ontology-5:tieneProcedencia rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Andalucía"/>
+        <untitled-ontology-5:visitaAlEquipamiento rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#Laujar_de_Andarax"/>
+        <untitled-ontology-5:numero_de_visitantes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1919</untitled-ontology-5:numero_de_visitantes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#dataset1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#dataset1">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+        <cube:dataSet rdf:resource="http://www.semanticweb.org/alber/ontologies/2020/10/untitled-ontology-5#dataset1"/>
     </owl:NamedIndividual>
     
 
